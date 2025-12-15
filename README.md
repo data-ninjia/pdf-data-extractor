@@ -51,7 +51,7 @@ for idx, row in merged_data.iterrows():
         separator_row = {col: "" for col in all_cols}
         separator_row["Chapter"] = current_chapter
         separator_row["Page"] = row["Page"]
-        separator_row["Soacription"] = row["Source Description"]
+        separator_row["Source Description"] = row["Source Description"]
         new_rows.append(separator_row)
     new_rows.append(row.to_dict())
     prev_chapter = current_chapter
